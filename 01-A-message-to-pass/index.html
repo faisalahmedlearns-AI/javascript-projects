@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="A simple, beautiful space to share a meaningful message.">
+
+  <title>MessageDrop — Share Your Message</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="MessageDrop home">
+      <span class="brand-icon" aria-hidden="true">✉</span>
+      <span>MessageDrop</span>
+    </a>
+
+    <p class="header-note">Small messages. Big connections.</p>
+  </header>
+
+  <main class="container">
+    <section class="message-card" aria-labelledby="page-title">
+
+      <div class="eyebrow">
+        <span class="status-dot" aria-hidden="true"></span>
+        YOUR SPACE TO EXPRESS
+      </div>
+
+      <h1 id="page-title">
+        Every message <span>matters.</span>
+      </h1>
+
+      <p class="subtitle">
+        Share a thought, express a feeling, or send a little positivity.
+      </p>
+
+      <form id="message-form">
+        <label for="message-input">Your message</label>
+
+        <textarea class="message-input" id="message-input" name="message" placeholder="Type a message..." maxlength="250"
+          rows="3" required></textarea>
+
+        <div class="input-meta">
+          <span>Share something meaningful.</span>
+          <span id="char-count">0/250</span>
+        </div>
+
+        <div class="composer-actions">
+          <div class="emoji-picker">
+            <button type="button" id="emoji-toggle" class="icon-btn" aria-label="Choose an emoji"
+              aria-expanded="false">☺</button>
+
+            <div id="emoji-menu" class="emoji-menu" hidden>
+              <button type="button" class="emoji-option">😊</button>
+              <button type="button" class="emoji-option">❤️</button>
+              <button type="button" class="emoji-option">😂</button>
+              <button type="button" class="emoji-option">👍</button>
+              <button type="button" class="emoji-option">🎉</button>
+              <button type="button" class="emoji-option">🙏</button>
+            </div>
+          </div>
+
+          <button class="btn" id="send-btn" type="submit">
+            Send message <span aria-hidden="true">➤</span>
+          </button>
+        </div>
+
+        <p class="error" role="alert" hidden>
+          Please enter a message before sending.
+        </p>
+
+        <p id="chat-status" class="chat-status" role="status" aria-live="polite"></p>
+      </form>
+
+
+      <section class="result-panel" aria-labelledby="lastmsg">
+        <div class="result-heading">
+          <span class="result-icon" aria-hidden="true">●</span>
+
+          <div>
+            <h2 id="lastmsg">Your Conversation</h2>
+            <p class="result-caption">Your personal message history</p>
+          </div>
+
+          <button type="button" id="clear-chat" class="clear-btn">
+            Clear chat
+          </button>
+        </div>
+
+        <div id="chat-messages" class="chat-messages" aria-label="Conversation">
+          <p id="empty-chat" class="empty-chat">
+            No messages yet. Send your first message!
+          </p>
+        </div>
+      </section>
+
+
+      <p class="card-footer">
+        Made for thoughts worth sharing.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    A little message can make a big difference.
+  </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---- <!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MessageDrop</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+      <div class="container">
+        <h1>MessageDrop — Share Your Message</h1>
+        <h2>Every Message Matters.</h2>
+        <p>Leave a thought, share a feeling, or send a message into the world.</p>
+        <input class="message-input" type="text" placeholder="Enter your message here...">
+        <div  class="btn btn:hover">Submit</div>
+        <p class="error">Please enter a value to pass</p>
+        <h3 id="lastmsg">Your Latest Message</h3>
+        <p class="message">Your message will appear here after you submit it.</p>
+      </div>
+      <script src="index.js"></script>
+</body>
+</html> -->

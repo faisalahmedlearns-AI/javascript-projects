@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="A clean, interactive counter app built by Faisal Ahmed, Web Developer.">
+  <title>Counter Studio | Faisal Ahmed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Counter Studio home">
+        <span class="brand-icon" aria-hidden="true"><span></span><span></span></span>
+        <span>counter<span class="brand-accent">.</span></span>
+      </a>
+      <div class="topbar-meta">
+        <span class="online-dot" aria-hidden="true"></span>
+        <span>INTERACTIVE MINI PROJECT</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p class="eyebrow"><span class="eyebrow-line"></span> SIMPLE. USEFUL. BUILT WITH CARE.</p>
+        <h1>Every click<br><span>counts.</span></h1>
+        <p class="intro-copy">A minimal counter for keeping track, testing ideas, and exploring the fundamentals of
+          JavaScript.</p>
+      </section>
+
+      <section class="counter-card" aria-labelledby="counterHeading">
+        <div class="card-heading">
+          <div>
+            <p class="card-kicker">YOUR COUNTER</p>
+            <h2 id="counterHeading">Live count</h2>
+          </div>
+          <span class="live-pill"><span></span> LIVE</span>
+        </div>
+
+        <div class="count-stage" aria-live="polite" aria-atomic="true">
+          <span class="count-label">CURRENT VALUE</span>
+          <p class="count" id="countValue">0</p>
+          <span class="count-caption" id="countCaption">Ready when you are</span>
+        </div>
+
+        <div class="counter-controls">
+          <button class="control-button decrease" id="decreaseButton" type="button" aria-label="Decrease count by one">
+            <span class="button-symbol" aria-hidden="true">−</span>
+            <span>Decrease</span>
+          </button>
+          <button class="control-button increase" id="increaseButton" type="button" aria-label="Increase count by one">
+            <span class="button-symbol" aria-hidden="true">+</span>
+            <span>Increase</span>
+          </button>
+        </div>
+
+        <button class="reset-button" id="resetButton" type="button">
+          <span aria-hidden="true">↺</span> Reset counter
+        </button>
+        <p class="keyboard-hint">Quick tip: use <kbd>+</kbd> / <kbd>↑</kbd> to increase and <kbd>−</kbd> / <kbd>↓</kbd>
+          to decrease.</p>
+      </section>
+
+      <section class="project-note">
+        <span class="note-icon" aria-hidden="true">✳</span>
+        <p>Small project. Real progress. <span>One line of code at a time.</span></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <span class="footer-mark">FA</span>
+        <div>
+          <strong>Faisal Ahmed</strong>
+          <span>Web Developer</span>
+        </div>
+      </div>
+      <span class="footer-credit">Designed & built with focus <span aria-hidden="true">✦</span></span>
+      <span class="footer-year">© <span id="year">2026</span> FA</span>
+    </footer>
+  </div>
+</body>
+
+</html>

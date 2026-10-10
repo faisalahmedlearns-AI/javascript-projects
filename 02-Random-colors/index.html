@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Discover, save, and copy beautiful random colors with ColorCraft.">
+  <title>ColorCraft — Color Exploration Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="page-glow page-glow-one"></div>
+  <div class="page-glow page-glow-two"></div>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="ColorCraft home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span>Color<span class="brand-light">Craft</span></span>
+      </a>
+      <div class="topbar-right">
+        <span class="status-dot"></span><span class="studio-label">COLOR EXPLORATION STUDIO</span>
+        <a class="github-link" href="#history">Your palette <span aria-hidden="true">↘</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT FAVORITE COLOR</p>
+          <h1>Find a color.<br><span>Find your spark.</span></h1>
+          <p class="hero-description">A little inspiration goes a long way. Explore fresh colors for your next idea,
+            design, or creative project.</p>
+          <div class="hero-note"><span class="sparkle">✳</span> One click. A whole new direction.</div>
+        </div>
+
+        <section class="color-card" aria-label="Random color generator">
+          <div class="card-topline">
+            <span class="live-label"><span class="live-dot"></span> LIVE PREVIEW</span>
+            <span class="color-mood" id="colorMood">Violet dream</span>
+          </div>
+          <button class="color-swatch" id="colorSwatch" type="button" aria-label="Generate another random color">
+            <span class="swatch-hint">CLICK TO EXPLORE</span>
+          </button>
+          <div class="color-info">
+            <div>
+              <span class="mini-label">CURRENT COLOR</span>
+              <div class="hex-value" id="hexValue">#8B5CF6</div>
+            </div>
+            <button class="copy-button" id="copyButton" type="button">
+              <span class="copy-icon" aria-hidden="true">▣</span>
+              <span id="copyLabel">Copy HEX</span>
+            </button>
+          </div>
+          <div class="card-divider"></div>
+          <button class="generate-button" id="generateButton" type="button">
+            <span class="button-spark" aria-hidden="true">✳</span>
+            Generate random color
+            <span class="shortcut">SPACE ↗</span>
+          </button>
+          <p class="card-footnote"><span class="check-icon">✓</span> <span id="statusMessage">Your color is ready to
+              use.</span></p>
+        </section>
+      </section>
+
+      <section class="history-section" id="history">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> YOUR CREATIVE TRAIL</p>
+            <h2>Recent colors <span class="history-count" id="historyCount">0</span></h2>
+            <p class="section-description">Your recent discoveries, all in one place.</p>
+          </div>
+          <button class="clear-button" id="clearHistoryButton" type="button">Clear history <span
+              aria-hidden="true">×</span></button>
+        </div>
+        <div class="history-grid" id="historyGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <span class="empty-icon">✳</span>
+          <p>Your color trail starts here.</p>
+          <span>Generate a color to add your first swatch.</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Made for curious minds.</span>
+      <span class="footer-tip">Tip: Press <kbd>Space</kbd> to generate a color</span>
+      <span class="footer-brand">COLORCRAFT <span>© 2026</span></span>
+    </footer>
+  </div>
+</body>
+
+</html>
